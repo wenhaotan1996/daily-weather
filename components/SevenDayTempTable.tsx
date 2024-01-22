@@ -19,11 +19,11 @@ export default function SevenDayTempTable({ daily }: Props) {
           <Image
             className="mx-auto"
             src={`https://www.weatherbit.io/static/img/icons/${
-              weatherCodeHelper[daily.weathercode[0]].image
+              weatherCodeHelper[daily.weathercode[i]].image
             }.png`}
             width={50}
             height={50}
-            alt={weatherCodeHelper[daily.weathercode[0]].label}
+            alt={weatherCodeHelper[daily.weathercode[i]].label}
           />
           <p>{`${daily.temperature_max[i]}${daily.unit.temperature}/${daily.temperature_min[i]}${daily.unit.temperature}`}</p>
         </ListItem>
